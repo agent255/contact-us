@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body class="body">
+    <style>
+      *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background:linear-gradient(#d2f5e3,#d2f5e3) no-repeat;
+}
+.container{
+	margin:30px auto;
+	padding: 30px;
+	background:#4352aa;
+	width: 100%;
+	max-width: 500px;
+	box-sizing: border-box;
+}
+
+.text-header{
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#errorMessage{
+	margin-bottom: 20px;
+	padding: 0px;
+	background:red;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+	color: #fff;
+
+}
+
+label{
+	display: block;
+	padding: 13px 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px 1px #777;
+	text-transform: uppercase;
+	font-size: 14px
+}
+
+input{
+	height: 18px;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	border:1px solid #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #333;
+
+}
+
+textarea{
+	height: 150px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	border:1px solid #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #333;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+	border:1px solid #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25) inset, 0 0 5px rgba(255, 255, 255, 0.4);
+
+}
+
+.submitBtn{
+	text-align: center;
+	color: #fff;
+	height: 50px;
+	padding: 0;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 25px;
+	border: 1px solid #000;
+	background: #000;
+	background-image: gradient(linear, left top, left bottom, color-stop(0%, #3b3b3b), color-stop(100%, #000000));
+	background: linear-gradient(top, #3b3b3b 0%,#000000 100%);
+	opacity: 0.5;
+
+}
+
+.submitBtn:hover{
+	color: #ccc;
+	cursor: pointer;
+	opacity: 0.8;
+
+}
+.COPYRIGHT{
+  margin-left: 40%;
+  align-content: center;
+	background-color: #d2f5e3;
+}
+.rights{
+	padding-left: 10%;
+}
+.contact-us {
+  margin:0;
+  background-color: #77cc6d;
+  font-family: 'Raleway Dots', sans-serif;
+
+}
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+}
+section #services h2 {
+  margin: 80px 0px 40px;
+  color: #fff;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+section #services li {
+  width: 120px;
+  height: 140px;
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+section #services li div {
+  width: 120px;
+  height: 120px;
+  color: #74d4b3;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 120px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+section #services li a {
+  color: #77cc6d;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #services li span {
+  width: 120px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+}
+.credits a {
+  display: block;
+  text-align: center;
+  color: #74d4b3;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
+  max-width: 300px;
+}
+
+    </style>
+    <div class="container">
+  		<div class="text-header">
+  			<h1>Send Us A Message</h1>
+  		</div>
+  		<div id="errorMessage"></div>
+  		<form action="mailto: manikantagonugondla@gmail.com" id="form" >
+  			<label for="name">Name: </label>
+  			<input type="text" name="name" id="name">
+
+
+  			<label for="email">Email: </label>
+  			<input type="email" name="email" id="email">
+
+
+  			<label for="title">Title: </label>
+  			<input type="text" name="title" id="title">
+
+
+  			<label for="message">Message: </label>
+  			<textarea id="message" cols="50" rows="20"></textarea>
+
+
+  			<input type="submit" name="submitBtn" class="submitBtn" value="Submit">
+  		</form>
+
+  	</div>
+
+
+  <script src="js/index.js"></script>
+
+
+  </body>
+</html>
